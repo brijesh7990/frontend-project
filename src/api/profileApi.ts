@@ -10,7 +10,7 @@ export interface Profiles {
 
 export const profileApi = createApi({
   reducerPath: "pokemonApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8000" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "http://192.168.100.105:8000" }),
   endpoints: (builder) => ({
     getUserProfile: builder.query<Profiles[], void>({
       query: () => `/api/profile/`,
